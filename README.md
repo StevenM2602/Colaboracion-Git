@@ -14,5 +14,10 @@ Este es un proyecto educativo que implementa un **CRUD completo** utilizando el 
 2. Importar la base de datos SQL proporcionada.
 3. Ajustar las credenciales en `config.php`.
 
+### Puesta en marcha 
+1. Iniciar Apache y MySQL desde XAMPP.
+2. Acceder a `http://localhost/mvc/`.
+3. Insertar cliente nuevo para poder usar el resto de funcionalidades.
+
 ## Documentación
 La documentación técnica ha sido generada con **phpDocumentor**.
