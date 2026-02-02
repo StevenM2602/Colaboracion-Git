@@ -1,6 +1,6 @@
 # Sistema de Gestión de Facturación (Reto 3.1)
 
-Este es un proyecto educativo que implementa un **CRUD completo** utilizando el patrón de diseño **MVC (Modelo-Vista-Controlador)** en PHP.
+Este es un proyecto estudiantil que implementa un **CRUD completo** utilizando el patrón de diseño **MVC (Modelo-Vista-Controlador)** en PHP.
 
 ## Funcionalidades
 - Gestión de **Clientes**: Alta, baja, modificación y listado.
