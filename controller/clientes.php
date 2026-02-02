@@ -1,6 +1,12 @@
 <?php
+//iniciamos sesión solo si aún hay una activa
+//esto permite usar $_SESSION para mensajes de error sin lanzar warning
+
 if (session_status() === PHP_SESSION_NONE)
     session_start();
+
+//cargamos dependencias (modelo, cifrado de contraseña y generación de PDF)
+// require_once evita incluir el mismo archivo más de una vez
 require_once("model/clientes.php");
 require_once("controller/crypt.php");
 require_once("pdfs/clientes.php");
@@ -147,7 +153,9 @@ static function Exportar(){
         $pdf->Output();
     }
 
-   
+
+   //elimina un cliente por id y redirige el listado.
+   //si falla. guarda el error en sesión y muestra la vista de error. 
     static function Borrar()
     {
         $cliente = new ClientesModelo();

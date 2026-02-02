@@ -1,6 +1,11 @@
 <?php
+//iniciamos la sesión solo si no existe una activa
+//lo que permite usar variables de sesión sin generar avisos
 if (session_status() === PHP_SESSION_NONE)
     session_start();
+
+//cargamos los modelos necesarios para gestionar facturas
+//y sus lineas asociadas desde la base de datos
 require_once("model/lineas_factura.php");
 require_once("model/facturas.php");
 
