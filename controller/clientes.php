@@ -153,7 +153,9 @@ static function Exportar(){
         $pdf->Output();
     }
 
-   
+
+   //elimina un cliente por id y redirige el listado.
+   //si falla. guarda el error en sesión y muestra la vista de error. 
     static function Borrar()
     {
         $cliente = new ClientesModelo();
